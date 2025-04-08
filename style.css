@@ -1,0 +1,561 @@
+/* navbar strats here with bg img starts here*/
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+.navbar-brand {
+    font-size: 1.5rem; /* Consistent size */
+    letter-spacing: 1px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    max-width: 250px; /* Prevents excessive width */
+    overflow: hidden;
+}
+.bg-image{
+    background-image: url("../img/bg\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps elements properly aligned */
+    padding: 10px 20px;
+}
+.custom-nav {
+    color: black !important; /* Default black text */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+    max-width: 100%; /* Ensures full width */
+    padding: 10px 20px; /* Adjust padding */
+     font-size: 1rem; /* Prevents navbar menu size from increasing */
+}
+.custom-nav:hover {
+    color: blue !important; /* Change color to blue on hover */
+}
+.social-icon i {
+    color: black; /* Default color */
+    transition: color 0.3s ease-in-out;
+}
+.social-icon:hover i.fa-facebook {
+    color: #1877F2; /* Facebook Blue */
+}
+.social-icon:hover i.fa-twitter {
+    color: #1DA1F2; /* Twitter Blue */
+}
+.social-icon:hover i.fa-instagram {
+    color: #E4405F; /* Instagram Pinkish-Red */
+}
+.custom-btn {
+    width: 120px; /* Slightly wider for better spacing */
+    height: 40px; /* Ensures proper vertical alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* navbar with bg img ends here */
+
+/* tickets starts here  */
+
+.card {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.card .fas.fa-arrow-right {
+    position: absolute;
+    bottom: -100px;
+    background-color: #4e9525;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: gold;
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease;
+}
+
+.card:hover .fas.fa-arrow-right {
+    bottom: 0px;
+    opacity: 1;
+}
+
+.card .fab.fa-envira,
+.fas.fa-cut,
+.fas.fa-people-carry {
+    font-size: 40px;
+    background-color: #0000000d;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #4e9525;
+}
+
+.card .h4 {
+    font-weight: 700;
+}
+.card:hover .fab.fa-envira,
+.card:hover .fas.fa-cut,
+.card:hover .fas.fa-people-carry {
+    color: gold;
+    background-color: #4e9525;
+}
+
+.ticket-bg {
+    background: url('https://images.unsplash.com/photo-1673808430400-9b8a152b9d96?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0; /* Add some spacing */
+    border-radius: 20px; /* Smooth edges */
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-image {
+  width: 100%;
+}
+
+img {
+  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.content:hover .content-details {
+  opacity: 1;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+.custom-card {
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+/* tickets section ends here */
+
+/* about amusment park starts here */
+body {
+    font-family: Arial, sans-serif;
+}
+.experience-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #17a2b8;
+    color: white;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.icon-box i {
+    font-size: 24px;
+    color: #17a2b8;
+    margin-right: 10px;
+}
+.stat-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.stat-blue {
+    background-color: #17a2b8;
+    color: white;
+}
+.stat-black {
+    background-color: black;
+    color: white;
+}
+/* about amusment park ends here */
+/* rides section starts here */
+.rides-carousel {
+    max-width: 100%;
+    margin: auto;
+    padding: 30px 0;
+}
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+}
+/* rides section ends here */
+
+/* services section starts here */
+
+/* 🔹 Background Image Section */
+.services-bg {
+    background: url('https://img.freepik.com/free-photo/modern-roller-coaster-amusement-park_23-2147917235.jpg?t=st=1741806047~exp=1741809647~hmac=d22394f696f6a3d4e1bd50281426a70d7000bed17417af94909edb74486850a8&w=1060') center/cover no-repeat;
+    width: 100%;
+    padding: 80px 0;
+}
+    
+/* 🔹 Alert Section Styling */
+.custom-alert {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+    
+/* 🔹 Table Styling */
+.services-table {
+    background: black; /* Table background set to black */
+    color: cyan; /* Text color set to white */
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+}
+    
+.services-table th, .services-table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid white; /* Updated border color */
+    color: black; /* Table text is white */
+}
+    
+/* ✅ Ensures table headers are WHITE */
+.services-table th {
+    background-color: cyan; /* Keeps cyan bg */
+    color: black !important; /* 🔥 Forces text to stay white */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+    
+/* 🔹 Cards Styling */
+.info-card {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+    
+.info-card:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+    
+.info-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+/* large restaurant img bg section starts here */
+.restaurant-section {
+    position: relative;
+    background: url('https://img.freepik.com/free-photo/dining-table-with-chairs-tableware_140725-7823.jpg?t=st=1741811155~exp=1741814755~hmac=43f5370ee258f7dacf17bf7e89b6fb6a1421ebe9e2f108d1bb7e8093be66afd9&w=1060') center/cover no-repeat;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+.restaurant-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.restaurant-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+.restaurant-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.restaurant-section:hover {
+    transform: scale(0.3s);
+}
+.restaurant-section:hover .restaurant-content {
+    color: yellow;
+}
+.restaurant-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+        }
+        /* large restaurant img bg section ends here */
+
+        /* large entertainment img bg section ends here */
+.entertainment-section {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1508360566237-303a44e4d14b?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    transition: all 0.5s ease-in-out;
+}
+.entertainment-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background 0.5s ease-in-out;
+}
+.entertainment-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    transition: transform 0.3s ease-in-out;
+}
+.entertainment-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.entertainment-content p {
+font-size: 1.2rem;
+margin-top: 10px;
+}
+.entertainment-section:hover::before {
+    background: rgba(0, 0, 0, 0.7);
+}
+.entertainment-section:hover .entertainment-content {
+    transform: scale(1.05);
+}
+/* large img bg section ends here */
+
+/* reviews section starts here */
+
+.review-section {
+    background: url('https://img.freepik.com/free-photo/amusement-park-funfair-festive-playful-happiness-concept_53876-144820.jpg?t=st=1741814115~exp=1741817715~hmac=06f806773460bc35e693c7c773a7876fbb144935d4f914e7394d08258a43736c&w=1480') center/cover no-repeat;
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+}
+.review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333; /* Dark Text for Better Visibility */
+}
+
+.review-author {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+/* ⭐ Star Rating Styling */
+.star-rating {
+    color: #FFD700; /* Gold Stars */
+    font-size: 20px;
+}
+/* reviews section ends here */
+
+/* testimonial section starts here  */
+.testimonial-card {
+    background-size: cover;
+    background-position: center;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* testimonials ends here  */
+/* faqs start here  */
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.accordion {
+    flex: 1;
+    max-width: 50%;
+}
+.image-container {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+    text-align: center;
+}
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.accordion-body{
+    text-align: left;
+}
+/* faqs section ends here */
+
+/* footer section strats here  */
+
+.footer {
+    background-color:black;
+    color: white;
+    padding: 40px 0;
+    
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.payment-methods img {
+    width: 40px;
+    margin: 5px;
+}
+.logo-img {
+    height: 200px; /* Fixed height */
+    width: auto;  /* Maintain aspect ratio */
+    max-height: 200px; /* Ensures navbar doesn't resize */
+    object-fit: contain;
+}

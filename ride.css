@@ -1,0 +1,162 @@
+/* navbar strats here with bg img starts here*/
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+.navbar-brand {
+    font-size: 1.5rem; /* Consistent size */
+    letter-spacing: 1px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    max-width: 250px; /* Prevents excessive width */
+    overflow: hidden;
+}
+.bg-image{
+    background-image: url("../img/bg\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps elements properly aligned */
+    padding: 10px 20px;
+}
+.custom-nav {
+    color: black !important; /* Default black text */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+    max-width: 100%; /* Ensures full width */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 1rem; /* Prevents navbar menu size from increasing */
+}
+.custom-nav:hover {
+    color: blue !important; /* Change color to blue on hover */
+}
+.social-icon i {
+    color: black; /* Default color */
+    transition: color 0.3s ease-in-out;
+}
+.social-icon:hover i.fa-facebook {
+    color: #1877F2; /* Facebook Blue */
+}
+.social-icon:hover i.fa-twitter {
+    color: #1DA1F2; /* Twitter Blue */
+}
+.social-icon:hover i.fa-instagram {
+    color: #E4405F; /* Instagram Pinkish-Red */
+}
+.custom-btn {
+    width: 120px; /* Slightly wider for better spacing */
+    height: 40px; /* Ensures proper vertical alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* navbar with bg img ends here */
+
+/* rides section starts here */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Alert Section */
+.alert-section {
+    background-color: #17a2b8; /* Cyan Background */
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 40px 0;
+}
+
+/* Rides Section */
+.rides-section {
+    padding: 40px 0;
+}
+
+/* Ride Cards */
+.ride-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ride-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ride-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.ride-card .card-body {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.ride-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ride-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* rides section ends here */
+
+/* footer section strats here  */
+
+.footer {
+    background-color:black;
+    color: white;
+    padding: 40px 0;
+    
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.payment-methods img {
+    width: 40px;
+    margin: 5px;
+}
+.logo-img {
+    height: 200px; /* Fixed height */
+    width: auto;  /* Maintain aspect ratio */
+    max-height: 200px; /* Ensures navbar doesn't resize */
+    object-fit: contain;
+}

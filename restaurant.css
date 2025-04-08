@@ -1,0 +1,199 @@
+/* navbar strats here with bg img starts here*/
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+    color: #fff;
+}
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+    color: #fff;
+}
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #cbbcb1;
+}
+.mask-custom {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, .15);
+}
+.navbar-brand {
+    font-size: 1.5rem; /* Consistent size */
+    letter-spacing: 1px;
+    white-space: nowrap; /* Prevents text from wrapping */
+    max-width: 250px; /* Prevents excessive width */
+    overflow: hidden;
+}
+.bg-image{
+    background-image: url("../img/bg\ img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Keeps elements properly aligned */
+    padding: 10px 20px;
+}
+.custom-nav {
+    color: black !important; /* Default black text */
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+    max-width: 100%; /* Ensures full width */
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 1rem; /* Prevents navbar menu size from increasing */
+}
+.custom-nav:hover {
+    color: blue !important; /* Change color to blue on hover */
+}
+.social-icon i {
+    color: black; /* Default color */
+    transition: color 0.3s ease-in-out;
+}
+.social-icon:hover i.fa-facebook {
+    color: #1877F2; /* Facebook Blue */
+}
+.social-icon:hover i.fa-twitter {
+    color: #1DA1F2; /* Twitter Blue */
+}
+.social-icon:hover i.fa-instagram {
+    color: #E4405F; /* Instagram Pinkish-Red */
+}
+.custom-btn {
+    width: 120px; /* Slightly wider for better spacing */
+    height: 40px; /* Ensures proper vertical alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+/* navbar with bg img ends here */
+
+/* large restaurant img bg section starts here */
+.restaurant-section {
+    position: relative;
+    background: url('https://img.freepik.com/free-photo/dining-table-with-chairs-tableware_140725-7823.jpg?t=st=1741811155~exp=1741814755~hmac=43f5370ee258f7dacf17bf7e89b6fb6a1421ebe9e2f108d1bb7e8093be66afd9&w=1060') center/cover no-repeat;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+.restaurant-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.restaurant-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+.restaurant-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.restaurant-section:hover {
+    transform: scale(0.3s);
+}
+.restaurant-section:hover .restaurant-content {
+    color: yellow;
+}
+.restaurant-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+    @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+        }
+        /* large restaurant img bg section ends here */
+
+/* menu sectin starts here */
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Menu Title */
+.menu-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Menu Card */
+.menu-card {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Ensuring All Images are the Same Size */
+.menu-img {
+    width: 100%;  /* Ensures full width */
+    height: 200px;  /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures proper aspect ratio without distortion */
+    border-radius: 10px;
+}
+
+/* Menu Info */
+.menu-info {
+    margin-top: 10px;
+}
+
+
+/* menu section ends here */
+
+/* footer section strats here  */
+
+.footer {
+    background-color:black;
+    color: white;
+    padding: 40px 0;
+    
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+}
+.payment-methods img {
+    width: 40px;
+    margin: 5px;
+}
+.logo-img {
+    height: 200px; /* Fixed height */
+    width: auto;  /* Maintain aspect ratio */
+    max-height: 200px; /* Ensures navbar doesn't resize */
+    object-fit: contain;
+}
